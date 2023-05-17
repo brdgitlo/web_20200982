@@ -23,7 +23,7 @@
 		<table class="table table-dark table-hover"></table>
 			<! img 태그는 이미지를 삽입합니다.src=경로,이미지,깨지면alt출력
 	<br><! br은 줄 바꿈입니다.>
-	<body class="text-center">
+	<body class="text-center" onload="init();">
     <br><br><br>
     <main class="form-signin">
       <form>
@@ -36,10 +36,9 @@
           <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
           <label for="floatingPassword">패스워드 입력</label>
         </div>
-
         <div class="checkbox mb-3">
           <label>
-            <input type="checkbox" value="remember-me"> 아이디 기억
+            <input type="checkbox" value="remember-me" id="idSaveCheck"> 아이디 기억
           </label>
         </div>
         <button class="w-100 btn btn-lg btn-primary" type="submit">로그인 하기</button>
