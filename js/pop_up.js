@@ -1,7 +1,7 @@
 function pop_up(){
 	var cookieCheck = getCookie("popupYN");
 	if (cookieCheck != "N"){
-	window.open("../pop_up/pop_up.html", "팝업테스트","width=400, height=300,top=10,left=10");
+	window.open("pop_up.html", "팝업테스트","width=400, height=300,top=10,left=10");
 	}
 }
 function showclock(){
@@ -30,7 +30,6 @@ function setCookie(name, vlaue, expiredays){
 	var date = new Date();
 	date.setDate(date.getDate() + expiredays);
 	document.cookie = escape(name) + "=" + escape(value) + "; expires=" + date.toUTCString() + "SameSite=None; Secure";
-		date.toUTCString();
 }
 function getCookie(name){
 	var cookie = document.cookie;
