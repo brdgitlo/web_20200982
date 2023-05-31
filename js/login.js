@@ -148,7 +148,7 @@ function decrypt_text(){
     const b = this.decodeByAES256(rk, eb);
     console.log(b); 
 }
-function addjavascript(isname) {
+function addJavascript(jsname) {
 	var th = document.getElementsByTagName('head')[0];
 	var s = document.createElement('script');
 	s.setAttribute('type','text/javascript');
